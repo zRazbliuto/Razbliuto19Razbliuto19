@@ -27,7 +27,6 @@ client.user.setGame(`Fuck Off.`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
-
 const Discord = require('discord.js');
 
 const Util = require('discord.js');
@@ -50,7 +49,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = !
+const prefix = "!";
 /////////////////////////
 ////////////////////////
 
@@ -371,6 +370,5 @@ client.on('message', message => {
       message.channel.send(helpEmbed);
     }
 });
- 
 
 client.login(process.env.BOT_TOKEN);
