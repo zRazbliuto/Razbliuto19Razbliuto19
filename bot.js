@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = '.'
+const prefix = .
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -50,7 +50,7 @@ client.user.setGame(`Fuck Off.`,"http://twitch.tv/S-F")
 
 	const client = new Discord.Client({disableEveryone: true});
 
-	const prefix = "!";
+	const prefix = .
 	/////////////////////////
 	////////////////////////
 
