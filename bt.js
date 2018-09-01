@@ -28,4 +28,4 @@ client.user.setGame(` #Bُubbles Tumblr,2kk .. `,"http://twitch.tv/S-F")
   console.log('')
 });
 
-client.login(process.env.BOT_TOKEN);
+
