@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '.'
-
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 client.user.setGame(` #Music is life ✨. `,"http://twitch.tv/S-F")
@@ -372,5 +371,5 @@ client.on('message', message => {
     }
 });
 
+client.login(process.env.BOT_TOKEN);
 
-client.login( NDg0NTkwMTk1NzYxNDc5Njgw.Dm1aNQ.J5j3G-Kmtud1INxPEFVq7hUzZ3Y );
