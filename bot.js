@@ -290,7 +290,7 @@ For additional help,  `)
      }
     });
 	client.on('message', message => {
-let prefix = "1";
+let prefix = ".";
     if (message.content.startsWith(prefix + "about")) {
 	        if(!message.channel.guild) return message.reply(' ');
  let embed = new Discord.RichEmbed() 
