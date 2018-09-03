@@ -27,13 +27,14 @@ client.user.setGame(` #Music is life ✨. `,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
 });
+
 const request = require('request');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
 const discord_token = "NDg0NTkwMTk1NzYxNDc5Njgw.Dm1aNQ.J5j3G-Kmtud1INxPEFVq7hUzZ3Y";
-client.login(discord_token);
+client.login(NDg0NTkwMTk1NzYxNDc5Njgw.Dm1aNQ.J5j3G-Kmtud1INxPEFVq7hUzZ3Y);
 client.on('ready', function() {
     console.log(`i am ready ${client.user.username}`);
 });
@@ -290,7 +291,7 @@ For additional help,  `)
      }
     });
 	client.on('message', message => {
-let prefix = ".";
+let prefix = "1";
     if (message.content.startsWith(prefix + "about")) {
 	        if(!message.channel.guild) return message.reply(' ');
  let embed = new Discord.RichEmbed() 
@@ -317,6 +318,5 @@ let prefix = ".";
          message.channel.send({embed:embed});
                         }
                     });
-
 
 client.login(process.env.BOT_TOKEN);
