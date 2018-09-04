@@ -28,7 +28,7 @@ client.user.setGame(` #Music is life ✨. `,"http://twitch.tv/S-F")
   console.log('')
 });
 client.on('message', message => {
-    if (message.content.startsWith("^avatar")) {
+    if (message.content.startsWith(".avatar")) {
         var mentionned = message.mentions.users.first();
     var x5bzm;
       if(mentionned){
