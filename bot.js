@@ -45,7 +45,7 @@ client.on('message', message => {
 });
 
 client.on('message', function(msg) {
-    if(msg.content.startsWith (prefix  + 'server')) {
+    if (message.content.startsWith(".server")) {
       let embed = new Discord.RichEmbed()
       .setColor('RANDOM')
       .setThumbnail(msg.guild.iconURL)
