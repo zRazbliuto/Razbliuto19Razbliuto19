@@ -28,17 +28,27 @@ client.user.setGame(` #Music is life ✨. `,"http://twitch.tv/S-F")
   console.log('')
 });
 
-client.on("guildMemberAdd", function(member) {
-    const wc = member.guild.channels.find("name", "member-log")
-        const embed = new Discord.RichEmbed()
-        .setColor('B90C0C')
-        .setAuthor(member.user.tag, member.user.avatarURL)
- .setDescription('***يا مرحبا وسهلاً بضيف لفانا، يزهي بك الأدب العربي وينثر لك أزهار يسقيك من نبع المشاعر وفانا، لين الهلا تثمر على غصونك أطيار. ***')
-.setThumbnail(member.avatarURL)
-        .setTimestamp()
-        return wc.sendEmbed(embed);
-        
+client.on('message', message => {
+    if (message.author.id === client.user.id) return;
+    if (message.guild) {
+   let embed = new Discord.RichEmbed()
+    let args = message.content.split(' ').slice(1).join(' ');
+if(message.content.split(' ')[0] == prefix . 'bc1') {
+    if (!args[1]) {
+return;
+}
+        message.guild.members.forEach(m => {
+   if(!message.member.hasPermission('ADMINISTRATOR')) return;
+            var bc = new Discord.RichEmbed()
+            .addField(' » الرسالة : ', args)
+            .setColor('#ff0000')
+            // m.send(`[${m}]`);
+            m.send(`${m}`,{embed: bc});
+        });
+    }
+    } else {
+        return;
+    }
 });
-
 
 client.login(process.env.BOT_TOKEN);
